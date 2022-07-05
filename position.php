@@ -163,12 +163,12 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">สาขาในมหาลัย</h1>
+                    <h1 class="h3 mb-2 text-gray-800">ตำแหน่ง</h1>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-2">
-                            <a href="add-branch.php" class="btn btn-success" role="button" aria-pressed="true"> เพิ่ม </a>
+                            <a href="add-position.php" class="btn btn-success" role="button" aria-pressed="true"> เพิ่ม </a>
                             <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                                 <div class="input-group">
                                     <input type="text" class="form-control bg-light border-2 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
@@ -186,34 +186,20 @@
                                     <thead class="thead-light">
                                         <tr>
                                             <th>หมายเลข</th>
-                                            <th>คณะ</th>
-                                            <th>สาขา</th>
+                                            <th>ตำแหน่ง</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>ครุศาสตร์</td>
-                                            <td>นาฏศิลป์</td>
+                                            <td>อาจารย์</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>เทคโนโลยีอุตสาหกรรม</td>
-                                            <td>สังคมศึกษา</td>
+                                            <td>พนักงาน</td>
                                         <tr>
                                             <td>3</td>
-                                            <td>เทคโนโลยีการเกษตร</td>
-                                            <td>ศิลปศึกษา</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>วิทยาศาสตร์</td>
-                                            <td>ฟิสิกส์</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>วิทยาการจัดการ</td>
-                                            <td>เทคโนโลยีสถาปัตยกรรม</td>
+                                            <td>เจ้าหน้าที่</td>
                                         </tr>
                                     </tbody>
                                 </table>

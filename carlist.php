@@ -9,7 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home page</title>
+    <title>ระบบจองยานพาหนะ มหาวิทยาลัยราชภัฏบุรีรัมย์</title>
+    <link rel="shortcut icon" href="icon/logo-bru.png">
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -31,15 +32,16 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
                 <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fa fa-bus" aria-hidden="true"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">CAR BRU <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">CAR BRU</div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item active">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="calendar.php">
                     <i class="fas fa-fw fa-calendar-alt"></i>
                     <span>ปฏิทินการจอง</span></a>
             </li>
@@ -87,6 +89,7 @@
                         <a class="collapse-item" href="register.php">ลงทะเบียน</a>
                         <a class="collapse-item" href="faculty.php">คณะ</a>
                         <a class="collapse-item" href="branch.php">สาขา</a>
+                        <a class="collapse-item" href="position.php">ตำแหน่ง</a>
                         <a class="collapse-item" href="agency.php">หน่วยงาน</a>
                         <a class="collapse-item" href="province.php">จังหวัด</a>
                         <a class="collapse-item" href="district.php">อำเภอ / เขต</a>

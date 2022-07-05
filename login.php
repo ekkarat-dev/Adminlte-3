@@ -50,8 +50,9 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>SB Admin 2 - Login</title>
+    
+    <title>ระบบจองยานพาหนะ มหาวิทยาลัยราชภัฏบุรีรัมย์</title>
+    <link rel="shortcut icon" href="icon/logo-bru.png">
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

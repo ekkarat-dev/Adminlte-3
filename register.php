@@ -9,7 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Register</title>
+    <title>ระบบจองยานพาหนะ มหาวิทยาลัยราชภัฏบุรีรัมย์</title>
+    <link rel="shortcut icon" href="icon/logo-bru.png">
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -34,12 +35,8 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
+                            <br>
                             <form class="user">
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" placeholder="Image">
-                                    </div>
-                                </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="text" class="form-control form-control-user" placeholder="First Name">
@@ -52,14 +49,15 @@
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="text" class="form-control form-control-user" placeholder="ID Code">
                                     </div>
-                                </div>
-                                <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" placeholder="Faculty">
+                                        <input type="text" class="form-control form-control-user" placeholder="Position">
                                     </div>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" placeholder="Branch">
-                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" placeholder="Faculty">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" placeholder="Branch">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" placeholder="Agencys">

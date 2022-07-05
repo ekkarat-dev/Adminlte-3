@@ -35,22 +35,51 @@
                             <div class="card-body">
                                 <div class="form-row">
                                     <div class="form-group col-md-12" style="text-align: center;">
-                                    <div class="text-center">
-                                                    <img src="img/test.png" class="rounded" alt="..." width="100" height="100">
-                                                </div>
+                                        <div class="text-center">
+                                            <img src="img/test.png" class="rounded" alt="..." width="100" height="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row" style="margin-left: 3px;">
+                                    <span>คำนำหน้า :</span>
+                                </div>
+                                <div class="form-row" style="margin-left: 5px;">
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" value="นาย">
+                                            <span class="form-check-label"> นาย </span>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" value="นาง">
+                                            <span class="form-check-label"> นาง </span>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" value="นางสาว">
+                                            <span class="form-check-label"> นางสาว </span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <span>ชื่อ-นามสกุล :</span>
+                                    <div class="form-group col-md-6">
+                                        <span>ชื่อ :</span>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <span>นามสกุล :</span>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
+                                        <span>ตำแหน่ง :</span>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
                                         <span>หน่วยงาน :</span>
                                         <input type="text" class="form-control">
                                     </div>
+                                </div>
+                                <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <span>เบอร์ติดต่อ :</span>
                                         <input type="text" class="form-control">

@@ -9,7 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home page</title>
+    <title>ระบบจองยานพาหนะ มหาวิทยาลัยราชภัฏบุรีรัมย์</title>
+    <link rel="shortcut icon" href="icon/logo-bru.png">
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -31,15 +32,16 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
                 <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fa fa-bus" aria-hidden="true"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">CAR BRU <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">CAR BRU</div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item active">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="calendar.php">
                     <i class="fas fa-fw fa-calendar-alt"></i>
                     <span>ปฏิทินการจอง</span></a>
             </li>
@@ -88,6 +90,7 @@
                         <a class="collapse-item" href="register.php">ลงทะเบียน</a>
                         <a class="collapse-item" href="faculty.php">คณะ</a>
                         <a class="collapse-item" href="branch.php">สาขา</a>
+                        <a class="collapse-item" href="position.php">ตำแหน่ง</a>
                         <a class="collapse-item" href="agency.php">หน่วยงาน</a>
                         <a class="collapse-item" href="province.php">จังหวัด</a>
                         <a class="collapse-item" href="district.php">อำเภอ / เขต</a>
@@ -185,12 +188,13 @@
                                             <th>หมายเลข</th>
                                             <th>รูปภาพ</th>
                                             <th>ชื่อ-นามสกุล</th>
+                                            <th>ตำแหน่ง</th>
                                             <th>หน่วยงาน</th>
                                             <th>เบอร์ติดต่อ</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr data-href="index.php">
                                             <td>1</td>
                                             <td>
                                                 <div class="text-center">
@@ -198,6 +202,7 @@
                                                 </div>
                                             </td>
                                             <td>ก้อง รักสยาม</td>
+                                            <td>เจ้าหน้าที่</td>
                                             <td>ก่อสร้าง</td>
                                             <td>08965471</td>
                                         </tr>
@@ -205,6 +210,7 @@
                                             <td>2</td>
                                             <td></td>
                                             <td>เดฟ บ้านบาน</td>
+                                            <td>พนักงาน</td>
                                             <td>ซ่อมแซม</td>
                                             <td>0871235510</td>
                                         </tr>
@@ -212,6 +218,7 @@
                                             <td>3</td>
                                             <td></td>
                                             <td>San Francisco</td>
+                                            <td>หนักงาน</td>
                                             <td>Izusu</td>
                                             <td>0541239</td>
                                         </tr>
@@ -219,6 +226,7 @@
                                             <td>4</td>
                                             <td></td>
                                             <td>Edinburgh</td>
+                                            <td>เจ้าหน้าที่</td>
                                             <td>Izusu</td>
                                             <td>9850715</td>
                                         </tr>
@@ -226,6 +234,7 @@
                                             <td>5</td>
                                             <td></td>
                                             <td>Tokyo</td>
+                                            <td>อาจารย์</td>
                                             <td>Toyota</td>
                                             <td>3210315</td>
                                         </tr>
@@ -323,6 +332,17 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const rows = document.querySelectorAll("tr[data-href]");
+
+            rows.forEach(row => {
+                row.addEventListener("click", () => {
+                    window.location.href = row.dataset.href;
+                });
+            });
+        });
+    </script>
 
 </body>
 

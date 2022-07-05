@@ -18,6 +18,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
 
 </head>
 
@@ -40,6 +41,7 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
+            <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" href="calendar.php">
                     <i class="fas fa-fw fa-calendar-alt"></i>
@@ -69,7 +71,6 @@
                     <i class="fas fa-fw fa-user"></i>
                     <span>พนักงานขับ</span></a>
             </li>
-
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -158,93 +159,13 @@
                     </ul>
 
                 </nav>
-
+                
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">สาขาในมหาลัย</h1>
-
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-2">
-                            <a href="add-branch.php" class="btn btn-success" role="button" aria-pressed="true"> เพิ่ม </a>
-                            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                                <div class="input-group">
-                                    <input type="text" class="form-control bg-light border-2 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-primary" type="button">
-                                            <i class="fas fa-search fa-sm"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead class="thead-light">
-                                        <tr>
-                                            <th>หมายเลข</th>
-                                            <th>คณะ</th>
-                                            <th>สาขา</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>ครุศาสตร์</td>
-                                            <td>นาฏศิลป์</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>เทคโนโลยีอุตสาหกรรม</td>
-                                            <td>สังคมศึกษา</td>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>เทคโนโลยีการเกษตร</td>
-                                            <td>ศิลปศึกษา</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>วิทยาศาสตร์</td>
-                                            <td>ฟิสิกส์</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>วิทยาการจัดการ</td>
-                                            <td>เทคโนโลยีสถาปัตยกรรม</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="dataTables_length" id="dataTable_length">
-                                        <label> Show <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm">
-                                                <option value="10">10</option>
-                                                <option value="25">25</option>
-                                                <option value="50">50</option>
-                                                <option value="100">100</option>
-                                            </select> entries </label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-7">
-                                    <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
-                                        <ul class="pagination">
-                                            <li class="paginate_button page-item previous" id="dataTable_previous"><a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
-                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
-                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
-                                            <li class="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
-                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
-                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
-                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a></li>
-                                            <li class="paginate_button page-item next" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                    <div style="width: 800px; margin: auto; margin-top: 10px; font-size: 16px;">
+                        <div class="p-3 mb-2 bg-light text-dark" id='calendar'></div>
                     </div>
 
                 </div>
@@ -309,6 +230,107 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var date = new Date();
+            var d = date.getDate();
+            var m = date.getMonth();
+            var y = date.getFullYear();
+
+            var calendar = $('#calendar').fullCalendar({
+                editable: true,
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+
+                events: "events.php",
+
+
+                eventRender: function(event, element, view) {
+                    if (event.allDay === 'true') {
+                        event.allDay = true;
+                    } else {
+                        event.allDay = false;
+                    }
+                },
+                selectable: true,
+                selectHelper: true,
+                select: function(start, end, allDay) {
+                    var title = prompt('Event Title:');
+
+                    if (title) {
+                        var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
+                        var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm:ss");
+                        $.ajax({
+                            url: 'add-events.php',
+                            data: 'title=' + title + '&start=' + start + '&end=' + end,
+                            type: "POST",
+                            success: function(json) {
+                                alert('Added Successfully');
+                            }
+                        });
+                        calendar.fullCalendar('renderEvent', {
+                                title: title,
+                                start: start,
+                                end: end,
+                                allDay: allDay
+                            },
+                            true
+                        );
+                    }
+                    calendar.fullCalendar('unselect');
+                },
+
+                editable: true,
+                eventDrop: function(event, delta) {
+                    var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
+                    var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
+                    $.ajax({
+                        url: 'update-events.php',
+                        data: 'title=' + event.title + '&start=' + start + '&end=' + end + '&id=' + event.id,
+                        type: "POST",
+                        success: function(json) {
+                            alert("Updated Successfully");
+                        }
+                    });
+                },
+                eventClick: function(event) {
+                    var decision = confirm("Do you really want to do that?");
+                    if (decision) {
+                        $.ajax({
+                            type: "POST",
+                            url: "delete-event.php",
+                            data: "&id=" + event.id,
+                            success: function(json) {
+                                $('#calendar').fullCalendar('removeEvents', event.id);
+                                alert("Updated Successfully");
+                            }
+                        });
+                    }
+                },
+                eventResize: function(event) {
+                    var start = $.fullCalendar.formatDate(event.start, "yyyy-MM-dd HH:mm:ss");
+                    var end = $.fullCalendar.formatDate(event.end, "yyyy-MM-dd HH:mm:ss");
+                    $.ajax({
+                        url: 'update-events.php',
+                        data: 'title=' + event.title + '&start=' + start + '&end=' + end + '&id=' + event.id,
+                        type: "POST",
+                        success: function(json) {
+                            alert("Updated Successfully");
+                        }
+                    });
+                }
+
+            });
+
+        });
+    </script>
 
 </body>
 
